@@ -406,7 +406,7 @@ var EnbBevisHelperBase = inherit(ModuleConfig, /** @lends EnbBevisHelperBase.pro
                 [require('enb/techs/file-copy'), {source: '?.ru.js', target: sourcesTarget}]
             ]);
         } else {
-            nodeConfig.addTech(require('enb-bt/techs/bt-server'));
+            nodeConfig.addTech(require('enb-bt/techs/bt-bundle'));
 
             nodeConfig.mode('development', function (nodeConfig) {
                 nodeConfig.addTechs([
